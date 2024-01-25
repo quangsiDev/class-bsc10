@@ -142,7 +142,7 @@
                   <th>Khuyến Mãi</th>
                   <th>Giá KM</th>
                   <th>Tình Trạng</th>
-                  <th></th>
+                  <th>Thao tác</th>
                 </tr>
               </thead>
               <tbody id="tbodyFood"></tbody>
@@ -265,8 +265,12 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-warning" id="btnCapNhat">Cập Nhật</button>
-            <button type="button" class="btn btn-warning" id="btnThemMon">Thêm</button>
+            <button onclick="updateFood()" type="button" class="btn btn-warning" id="btnCapNhat">
+              Cập Nhật
+            </button>
+            <button type="button" class="btn btn-warning" onclick="createFood()" id="btnThemMon">
+              Thêm
+            </button>
           </div>
         </div>
       </div>
