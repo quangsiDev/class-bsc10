@@ -89,6 +89,7 @@ window.updateFood = () => {
   })
     .then(function (res) {
       $("#exampleModal").modal("hide");
+      fetchFoodList();
 
       console.log(res);
     })
